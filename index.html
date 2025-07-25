@@ -1,48 +1,80 @@
 <!DOCTYPE html>
-<html lang=\"en\">
+<html lang="en">
 <head>
-    <meta charset=\"UTF-8\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prashant Shukla | AI & ML Professional</title>
-    <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap\">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f9;
+            background-color: #f7f9fc;
         }
         header, section {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
-            padding: 20px;
+            padding: 30px;
         }
         header {
             text-align: center;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background: linear-gradient(to bottom, #4e73df, #224abe);
+            color: #fff;
+            box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+        }
+        header a {
+            color: #d1e0ff;
         }
         h1 {
-            margin: 10px 0;
-            font-size: 2.5em;
+            margin: 0;
+            font-size: 3em;
         }
         h2 {
-            margin-top: 40px;
             font-size: 2em;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #224abe;
+            border-bottom: 2px solid #224abe;
+            display: inline-block;
         }
         a {
-            color: #0366d6;
             text-decoration: none;
+            color: #224abe;
+            transition: color 0.3s;
         }
-        .project, .experience, .education, .achievement {
+        a:hover {
+            color: #4e73df;
+        }
+        .card {
             background-color: #fff;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .icon {
+            margin-right: 10px;
+            color: #4e73df;
+        }
+        .contact-info i {
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            header, section {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
@@ -50,102 +82,71 @@
 <header>
     <h1>Prashant Shukla</h1>
     <p>AI/ML Engineer | Data Scientist | Kaggle Expert</p>
-    <p><a href=\"https://www.linkedin.com/in/prashantshukla91/\">LinkedIn</a> | <a href=\"https://www.kaggle.com/prashantshukla91\">Kaggle</a> | <a href=\"mailto:prashantjack.shukla@gmail.com\">Email</a></p>
+    <p>
+        <a href="https://www.linkedin.com/in/prashantshukla91/"><i class="fab fa-linkedin"></i> LinkedIn</a> |
+        <a href="https://www.kaggle.com/prashantshukla91"><i class="fab fa-kaggle"></i> Kaggle</a> |
+        <a href="mailto:prashantjack.shukla@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    </p>
 </header>
 
 <section>
-    <h2>About Me</h2>
-    <p>Experienced AI/ML Engineer with a robust background in machine learning, NLP, computer vision, and data analytics. Passionate about delivering data-driven solutions.</p>
-</section>
-
-<section>
-    <h2>Skills</h2>
-    <p>Python, NLP, Deep Learning, Machine Learning, Data Visualization, MLOps, Azure Cloud, Power BI, SAP Basis.</p>
-</section>
-
-<section>
-    <h2>Projects</h2>
-    <div class="project">
-        <h3>AI-Powered Educational Chatbot</h3>
-        <p>Developed multilingual educational chatbots leveraging Azure Cloud and NLP technologies for complex query resolutions and enhanced user interaction.</p>
-    </div>
-    <div class="project">
-        <h3>Uber Ride Price Prediction</h3>
-        <p>Implemented fare predictions using machine learning (XGBoost) trained on extensive NYC data, deployed via Streamlit for public use.</p>
-    </div>
-    <div class="project">
-        <h3>Disease Prediction (Parkinson's, Heart, Diabetes)</h3>
-        <p>Created robust machine learning models for disease prediction, accessible publicly through Streamlit.</p>
-    </div>
-    <div class="project">
-        <h3>Animal Image Classification</h3>
-        <p>Used DenseNet169 CNN model for high accuracy animal classification achieving 97% accuracy and a 0.97 F1 score.</p>
-    </div>
-    <div class="project">
-        <h3>Resolution Code Prediction & Recommendation System</h3>
-        <p>Predicted resolution codes using voting ML ensemble and NLP, achieving 91% accuracy and deployed via Streamlit.</p>
-    </div>
-</section>
-
-<section>
-    <h2>Kaggle Achievements</h2>
-    <div class=\"achievement\">
-        <p>🏅 Expert Tier - Kaggle Competitions (2 silver medals, 4 bronze medals, Rank: 421/202,438)</p>
-        <p>🥈 Silver Medal - ARC Prize 2024 (66th/1,427)</p>
-        <p>🥉 Bronze Medal - Learning Agency Lab: Automated Essay Scoring 2.0 (147th/2,706)</p>
-        <p>🥉 Bronze Medal - AI Mathematical Olympiad: Progress Prize 2 (144th/2,212)</p>
-        <p>🏅Silver Medal -  16th Position - Konwinski Prize (16th/617)</p>
-    </div>
-</section>
-<section>
     <h2>Professional Experience</h2>
-    <div class="experience">
+    <div class="card">
         <h3>AI/ML Engineer - Kaidoko Automation Solutions Pvt Ltd (Dec 2024 - Present)</h3>
-        <p>Developed multilingual educational chatbots using Azure Cloud for complex problem-solving.</p>
+        <p>Developed multilingual educational chatbots leveraging Azure Cloud and Document Intelligence for precise query resolutions and user experience enhancements.</p>
     </div>
-    <div class="experience">
+    <div class="card">
         <h3>Data Scientist - Mails Daddy Software Pvt Ltd (May 2023 - Dec 2024)</h3>
-        <p>Performed sales predictions and analytics via Power BI and deployed solutions through Streamlit.</p>
+        <p>Analyzed product sales data, developed predictive models using ML algorithms, visualized insights via Power BI, and deployed analytical solutions through Streamlit.</p>
     </div>
-    <div class="experience">
+    <div class="card">
         <h3>Jr. Software Developer - Xcaliber Infotech Pvt Ltd (Dec 2022 - Apr 2023)</h3>
-        <p>Conducted EDA, NLP deployments, and recommendation system enhancements.</p>
+        <p>Performed exploratory data analysis, NLP model deployments, and developed recommendation systems, enhancing user engagement and system efficiency.</p>
     </div>
-    <div class="experience">
+    <div class="card">
         <h3>Educator (Self Employed) - Jhansi, India (Feb 2017 - Jul 2022)</h3>
-        <p>Trained students for competitive exams and in machine learning algorithms, significantly increasing pass rates.</p>
+        <p>Trained students for competitive exams and provided specialized coaching in machine learning, significantly boosting student success rates.</p>
     </div>
-    <div class="experience">
+    <div class="card">
         <h3>SAP Basis Consultant (Freelance) - Noida, India (Apr 2014 - Jan 2017)</h3>
-        <p>Managed SAP Basis operations and project management, improving operational efficiency.</p>
+        <p>Managed SAP Basis operations, user administration, and project coordination, substantially improving organizational efficiency.</p>
     </div>
 </section>
 
 <section>
     <h2>Education</h2>
-    <div class="education">
-        <h3>PG Diploma in Artificial Intelligence, CDAC Pune (2022)</h3>
-        <p>Scored 80.77%</p>
+    <div class="card">
+        <p><strong>PG Diploma in Artificial Intelligence</strong>, CDAC Pune (2022) - 80.77%</p>
+        <p><strong>PG Diploma in Data Science & Analytics</strong>, NIELIT (2022) - 80.00%</p>
+        <p><strong>B.Tech</strong>, KIET Ghaziabad (2009-2013) - 66.88%</p>
     </div>
-    <div class="education">
-        <h3>PG Diploma in Data Science & Analytics, NIELIT (2022)</h3>
-        <p>Scored 80.00%</p>
-    </div>
-    <div class="education">
-        <h3>B.Tech, KIET Ghaziabad (2009-2013)</h3>
-        <p>Scored 66.88%</p>
-    </div>
-</section>
-<section>
-    <h2>Live Links & Personal Apps</h2>
-    <p><a href="https://prashant2091-texttospeech-app-t9dlq6.streamlit.app/">Text-to-Speech App</a></p>
-    <p><a href="https://prashant2091-cdacproject-app-dkfex0.streamlit.app/">CDAC Project App</a></p>
-</section>
-<section>
-    <h2>Contact</h2>
-    <p>Email: <a href=\"mailto:prashantjack.shukla@gmail.com\">prashantjack.shukla@gmail.com</a></p>
-    <p>LinkedIn: <a href=\"https://www.linkedin.com/in/prashantshukla91/\">prashantshukla91</a></p>
 </section>
 
+<section>
+    <h2>Kaggle Achievements</h2>
+    <div class="card">
+        <p>🏅 Kaggle Expert: 2 Silver Medals, 4 Bronze Medals, Rank 421/202,438.</p>
+        <p>🥈 ARC Prize 2024 </p>
+        <p>🥉 Automated Essay Scoring 2.0 </p>
+        <p>🥉 AI Mathematical Olympiad 2.0 </p>
+        <p>🥈 Konwinski Prize </p>
+    </div>
+</section>
+
+<section>
+    <h2>Live Links & Personal Apps</h2>
+    <div class="card">
+        <p><a href="https://prashant2091-texttospeech-app-t9dlq6.streamlit.app/">Text-to-Speech App</a></p>
+        <p><a href="https://prashant2091-cdacproject-app-dkfex0.streamlit.app/">CDAC Project App</a></p>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <div class="card contact-info">
+        <p><i class="fas fa-envelope"></i>Email: <a href="mailto:prashantjack.shukla@gmail.com">prashantjack.shukla@gmail.com</a></p>
+        <p><i class="fab fa-linkedin"></i>LinkedIn: <a href="https://www.linkedin.com/in/prashantshukla91/">prashantshukla91</a></p>
+    </div>
+</section>
 </body>
 </html>
